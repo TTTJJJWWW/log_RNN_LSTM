@@ -1,0 +1,31 @@
+mysql> select * from dict;
++----+-----------------------------------------------------------------------------------------------+
+| ID | msg                                                                                           |
++----+-----------------------------------------------------------------------------------------------+
+|  1 |  Started Session 1259 of user root.                                                           |
+|  2 |  Starting Session 1258 of user root.                                                          |
+|  3 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+|  4 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+|  5 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+|  6 | -- MARK --                                                                                    |
+|  7 |  Job `cron.daily' started                                                                     |
+|  8 |  starting 0yum-daily.cron                                                                     |
+|  9 |  finished 0yum-daily.cron                                                                     |
+| 10 |  starting logrotate                                                                           |
+| 11 |  finished logrotate                                                                           |
+| 12 |  starting man-db.cron                                                                         |
+| 13 |  finished man-db.cron                                                                         |
+| 14 |  starting mlocate                                                                             |
+| 15 |  finished mlocate                                                                             |
+| 16 |  Job `cron.daily' terminated                                                                  |
+| 17 |  Normal exit (1 job run)                                                                      |
+| 18 |  Accepted password for root from 172.16.0.239 port 52360 ssh2                                 |
+| 19 |  New session 1260 of user root.                                                               |
+| 20 |  pam_unix(sshd:session): session opened for user root by (uid=0)                              |
+| 21 |  pam_unix(sshd:session): session closed for user root                                         |
+| 22 |  Removed session 1260.                                                                        |
+| 23 |  Accepted password for root from 172.16.0.243 port 55896 ssh2                                 |
+| 24 |  dbus[987]: [system] Activating service name='org.freedesktop.problems' (using servicehelper) |
+| 25 |  [system] Successfully activated service 'org.freedesktop.problems'                           |
++----+-----------------------------------------------------------------------------------------------+
+25 rows in set (0.00 sec)

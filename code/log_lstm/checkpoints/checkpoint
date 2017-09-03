@@ -1,0 +1,2 @@
+model_checkpoint_path: "log_lstm-2001"
+all_model_checkpoint_paths: "log_lstm-2001"

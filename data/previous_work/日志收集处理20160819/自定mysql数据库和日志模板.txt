@@ -1,0 +1,95 @@
+
+数据库名：systemLog
+表名：logInfo
+日志输出输出模板：log
+
+日志输出模板：注意数据项的引号
+template(name="logInfo" type="list" option.sql="on"){
+ constant(value="insert into logInfo(timestamp,fromHostIP,nodeID, syslogfacility,syslogfacilityText, syslogseverity,syslogseverityText, msg)")
+    constant(value=" values ('")
+    property(name="timestamp" dateFormat="mysql") 
+    constant(value="',' ")
+    property(name="fromhost-ip")
+    constant(value="', '")
+    property(name="fromhost")
+    constant(value="', '")
+    property(name="syslogpriority")
+    constant(value="', '")
+    property(name="syslogfacility-text")
+    constant(value="', '")
+    property(name="syslogseverity")
+    constant(value="', '")
+    property(name="syslogseverity-text")
+    constant(value="', '")
+    property(name="msg")
+    constant(value="')")
+}
+
+
+创建数据库语句
+CREATE DATABASE systemLog ;
+USE systemLog;
+CREATE TABLE logInfo
+(
+        ID int unsigned not null auto_increment primary key,
+        timestamp datetime NULL, 
+        fromHostIP varchar(20),
+        nodeID  varchar(30),
+        syslogfacility  int NULL,
+	syslogfacilityText  varchar(20),
+        syslogseverity int NULL,
+	syslogseverityText varchar(20),
+	msg varchar(300),
+        SystemID int NULL
+);
+
+日志字典表
+CREATE TABLE dict
+(
+        ID int unsigned not null auto_increment primary key,
+        msg varchar(300)
+);
+
+日志信息提取表
+CREATE TABLE extractLogInfo
+(
+        ID int unsigned not null auto_increment primary key,
+        msg varchar(300),
+        logInfoID int ,
+        dictID int 
+      
+);
+
+
+
+测试常用mysql语句
+drop table dict ;
+drop table  extractLogInfo;
+
+
+CREATE TABLE dict
+(
+        ID int unsigned not null auto_increment primary key,
+        msg varchar(300)
+);
+
+
+CREATE TABLE extractLogInfo
+(
+        ID int unsigned not null auto_increment primary key,
+        msg varchar(300),
+        logInfoID int ,
+        dictID int 
+      
+);
+
+
+select * from dict;
+
+select * from extractLogInfo;
+
+select * from logInfo;
+
+
+
+

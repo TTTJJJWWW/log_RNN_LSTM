@@ -1,0 +1,148 @@
+mysql> select ID,timestamp ,   syslogseverity ,syslogfacility ,msg  from logInfo where ID >=7057;
++------+---------------------+----------------+----------------+-----------------------------------------------------------------------------------------------+
+| ID   | timestamp           | syslogseverity | syslogfacility | msg                                                                                           |
++------+---------------------+----------------+----------------+-----------------------------------------------------------------------------------------------+
+| 7057 | 2016-08-11 03:10:01 |              6 |              6 |  Started Session 1259 of user root.                                                           |
+| 7058 | 2016-08-11 03:10:01 |              6 |              6 | Started Session 1259 of user root.                                                            |
+| 7059 | 2016-08-11 03:10:01 |              6 |              6 |  Starting Session 1259 of user root.                                                          |
+| 7060 | 2016-08-11 03:10:01 |              6 |              6 | Starting Session 1259 of user root.                                                           |
+| 7061 | 2016-08-11 03:10:01 |              6 |              6 |  Started Session 1258 of user root.                                                           |
+| 7062 | 2016-08-11 03:10:01 |              6 |              6 | Started Session 1258 of user root.                                                            |
+| 7063 | 2016-08-11 03:10:01 |              6 |              6 |  Starting Session 1258 of user root.                                                          |
+| 7064 | 2016-08-11 03:10:01 |              6 |              6 | Starting Session 1258 of user root.                                                           |
+| 7065 | 2016-08-11 03:10:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7066 | 2016-08-11 03:10:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7067 | 2016-08-11 03:10:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7068 | 2016-08-11 03:10:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7069 | 2016-08-11 03:10:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7070 | 2016-08-11 03:10:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
+| 7071 | 2016-08-11 03:10:57 |              6 |              6 | -- MARK --                                                                                    |
+| 7072 | 2016-08-11 03:17:01 |              5 |              5 |  Job `cron.daily' started                                                                     |
+| 7073 | 2016-08-11 03:17:01 |              5 |              5 | Job `cron.daily' started                                                                      |
+| 7074 | 2016-08-11 03:17:01 |              5 |              5 |  starting 0yum-daily.cron                                                                     |
+| 7075 | 2016-08-11 03:17:01 |              5 |              5 | starting 0yum-daily.cron                                                                      |
+| 7076 | 2016-08-11 03:17:01 |              5 |              5 |  finished 0yum-daily.cron                                                                     |
+| 7077 | 2016-08-11 03:17:01 |              5 |              5 | finished 0yum-daily.cron                                                                      |
+| 7078 | 2016-08-11 03:17:01 |              5 |              5 |  starting logrotate                                                                           |
+| 7079 | 2016-08-11 03:17:01 |              5 |              5 | starting logrotate                                                                            |
+| 7080 | 2016-08-11 03:17:01 |              5 |              5 |  finished logrotate                                                                           |
+| 7081 | 2016-08-11 03:17:01 |              5 |              5 | finished logrotate                                                                            |
+| 7082 | 2016-08-11 03:17:01 |              5 |              5 |  starting man-db.cron                                                                         |
+| 7083 | 2016-08-11 03:17:01 |              5 |              5 | starting man-db.cron                                                                          |
+| 7084 | 2016-08-11 03:17:02 |              5 |              5 |  finished man-db.cron                                                                         |
+| 7085 | 2016-08-11 03:17:02 |              5 |              5 | finished man-db.cron                                                                          |
+| 7086 | 2016-08-11 03:17:03 |              5 |              5 |  starting mlocate                                                                             |
+| 7087 | 2016-08-11 03:17:03 |              5 |              5 | starting mlocate                                                                              |
+| 7088 | 2016-08-11 03:17:03 |              5 |              5 |  finished mlocate                                                                             |
+| 7089 | 2016-08-11 03:17:03 |              5 |              5 | finished mlocate                                                                              |
+| 7090 | 2016-08-11 03:17:03 |              5 |              5 |  Job `cron.daily' terminated                                                                  |
+| 7091 | 2016-08-11 03:17:03 |              5 |              5 |  Normal exit (1 job run)                                                                      |
+| 7092 | 2016-08-11 03:17:03 |              5 |              5 | Job `cron.daily' terminated                                                                   |
+| 7093 | 2016-08-11 03:17:03 |              5 |              5 | Normal exit (1 job run)                                                                       |
+| 7094 | 2016-08-11 03:18:15 |              6 |              6 |  Accepted password for root from 172.16.0.239 port 52360 ssh2                                 |
+| 7095 | 2016-08-11 03:18:15 |              6 |              6 | Accepted password for root from 172.16.0.239 port 52360 ssh2                                  |
+| 7096 | 2016-08-11 03:18:15 |              6 |              6 |  New session 1260 of user root.                                                               |
+| 7097 | 2016-08-11 03:18:15 |              6 |              6 | New session 1260 of user root.                                                                |
+| 7098 | 2016-08-11 03:18:15 |              6 |              6 |  Started Session 1260 of user root.                                                           |
+| 7099 | 2016-08-11 03:18:15 |              6 |              6 | Started Session 1260 of user root.                                                            |
+| 7100 | 2016-08-11 03:18:15 |              6 |              6 |  Starting Session 1260 of user root.                                                          |
+| 7101 | 2016-08-11 03:18:15 |              6 |              6 | Starting Session 1260 of user root.                                                           |
+| 7102 | 2016-08-11 03:18:15 |              6 |              6 |  pam_unix(sshd:session): session opened for user root by (uid=0)                              |
+| 7103 | 2016-08-11 03:18:15 |              6 |              6 | pam_unix(sshd:session): session opened for user root by (uid=0)                               |
+| 7104 | 2016-08-11 03:18:36 |              6 |              6 |  pam_unix(sshd:session): session closed for user root                                         |
+| 7105 | 2016-08-11 03:18:36 |              6 |              6 | pam_unix(sshd:session): session closed for user root                                          |
+| 7106 | 2016-08-11 03:18:36 |              6 |              6 |  Removed session 1260.                                                                        |
+| 7107 | 2016-08-11 03:18:36 |              6 |              6 | Removed session 1260.                                                                         |
+| 7108 | 2016-08-11 03:20:01 |              6 |              6 |  Started Session 1261 of user root.                                                           |
+| 7109 | 2016-08-11 03:20:01 |              6 |              6 |  Starting Session 1261 of user root.                                                          |
+| 7110 | 2016-08-11 03:20:01 |              6 |              6 | Started Session 1261 of user root.                                                            |
+| 7111 | 2016-08-11 03:20:01 |              6 |              6 | Starting Session 1261 of user root.                                                           |
+| 7112 | 2016-08-11 03:20:01 |              6 |              6 |  Started Session 1262 of user root.                                                           |
+| 7113 | 2016-08-11 03:20:01 |              6 |              6 | Started Session 1262 of user root.                                                            |
+| 7114 | 2016-08-11 03:20:01 |              6 |              6 |  Starting Session 1262 of user root.                                                          |
+| 7115 | 2016-08-11 03:20:01 |              6 |              6 | Starting Session 1262 of user root.                                                           |
+| 7116 | 2016-08-11 03:20:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7117 | 2016-08-11 03:20:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7118 | 2016-08-11 03:20:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7119 | 2016-08-11 03:20:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7120 | 2016-08-11 03:20:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7121 | 2016-08-11 03:20:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
+| 7122 | 2016-08-12 00:26:11 |              6 |              6 |  -- MARK --                                                                                   |
+| 7123 | 2016-08-11 03:30:01 |              6 |              6 |  Started Session 1263 of user root.                                                           |
+| 7124 | 2016-08-11 03:30:01 |              6 |              6 | Started Session 1263 of user root.                                                            |
+| 7125 | 2016-08-11 03:30:01 |              6 |              6 |  Starting Session 1263 of user root.                                                          |
+| 7126 | 2016-08-11 03:30:01 |              6 |              6 | Starting Session 1263 of user root.                                                           |
+| 7127 | 2016-08-11 03:30:01 |              6 |              6 |  Started Session 1264 of user root.                                                           |
+| 7128 | 2016-08-11 03:30:01 |              6 |              6 |  Starting Session 1264 of user root.                                                          |
+| 7129 | 2016-08-11 03:30:01 |              6 |              6 | Started Session 1264 of user root.                                                            |
+| 7130 | 2016-08-11 03:30:01 |              6 |              6 | Starting Session 1264 of user root.                                                           |
+| 7131 | 2016-08-11 03:30:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7132 | 2016-08-11 03:30:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7133 | 2016-08-11 03:30:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7134 | 2016-08-11 03:30:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7135 | 2016-08-11 03:30:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7136 | 2016-08-11 03:30:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
+| 7137 | 2016-08-11 03:30:57 |              6 |              6 | -- MARK --                                                                                    |
+| 7138 | 2016-08-11 03:34:34 |              6 |              6 |  Accepted password for root from 172.16.0.243 port 55896 ssh2                                 |
+| 7139 | 2016-08-11 03:34:34 |              6 |              6 | Accepted password for root from 172.16.0.243 port 55896 ssh2                                  |
+| 7140 | 2016-08-11 03:34:34 |              6 |              6 |  New session 1265 of user root.                                                               |
+| 7141 | 2016-08-11 03:34:34 |              6 |              6 | New session 1265 of user root.                                                                |
+| 7142 | 2016-08-11 03:34:34 |              6 |              6 |  Started Session 1265 of user root.                                                           |
+| 7143 | 2016-08-11 03:34:34 |              6 |              6 |  Starting Session 1265 of user root.                                                          |
+| 7144 | 2016-08-11 03:34:34 |              6 |              6 | Started Session 1265 of user root.                                                            |
+| 7145 | 2016-08-11 03:34:34 |              6 |              6 | Starting Session 1265 of user root.                                                           |
+| 7146 | 2016-08-11 03:34:34 |              6 |              6 |  pam_unix(sshd:session): session opened for user root by (uid=0)                              |
+| 7147 | 2016-08-11 03:34:34 |              6 |              6 | pam_unix(sshd:session): session opened for user root by (uid=0)                               |
+| 7148 | 2016-08-11 03:34:34 |              6 |              6 |  dbus[987]: [system] Activating service name='org.freedesktop.problems' (using servicehelper) |
+| 7149 | 2016-08-11 03:34:34 |              6 |              6 | dbus[987]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)  |
+| 7150 | 2016-08-11 03:34:34 |              5 |              5 |  [system] Activating service name='org.freedesktop.problems' (using servicehelper)            |
+| 7151 | 2016-08-11 03:34:34 |              5 |              5 | [system] Activating service name='org.freedesktop.problems' (using servicehelper)             |
+| 7152 | 2016-08-11 03:34:34 |              5 |              5 |  [system] Successfully activated service 'org.freedesktop.problems'                           |
+| 7153 | 2016-08-11 03:34:34 |              5 |              5 | [system] Successfully activated service 'org.freedesktop.problems'                            |
+| 7154 | 2016-08-11 03:34:34 |              6 |              6 |  dbus[987]: [system] Successfully activated service 'org.freedesktop.problems'                |
+| 7155 | 2016-08-11 03:34:34 |              6 |              6 | dbus[987]: [system] Successfully activated service 'org.freedesktop.problems'                 |
+| 7156 | 2016-08-11 03:40:01 |              6 |              6 |  Started Session 1266 of user root.                                                           |
+| 7157 | 2016-08-11 03:40:01 |              6 |              6 |  Starting Session 1266 of user root.                                                          |
+| 7158 | 2016-08-11 03:40:01 |              6 |              6 | Started Session 1266 of user root.                                                            |
+| 7159 | 2016-08-11 03:40:01 |              6 |              6 | Starting Session 1266 of user root.                                                           |
+| 7160 | 2016-08-11 03:40:01 |              6 |              6 |  Started Session 1267 of user root.                                                           |
+| 7161 | 2016-08-11 03:40:01 |              6 |              6 | Started Session 1267 of user root.                                                            |
+| 7162 | 2016-08-11 03:40:01 |              6 |              6 |  Starting Session 1267 of user root.                                                          |
+| 7163 | 2016-08-11 03:40:01 |              6 |              6 | Starting Session 1267 of user root.                                                           |
+| 7164 | 2016-08-11 03:40:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7165 | 2016-08-11 03:40:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7166 | 2016-08-11 03:40:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7167 | 2016-08-11 03:40:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7168 | 2016-08-11 03:40:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7169 | 2016-08-11 03:40:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
+| 7170 | 2016-08-12 00:46:11 |              6 |              6 |  -- MARK --                                                                                   |
+| 7171 | 2016-08-11 03:50:01 |              6 |              6 |  Started Session 1268 of user root.                                                           |
+| 7172 | 2016-08-11 03:50:01 |              6 |              6 |  Starting Session 1268 of user root.                                                          |
+| 7173 | 2016-08-11 03:50:01 |              6 |              6 | Started Session 1268 of user root.                                                            |
+| 7174 | 2016-08-11 03:50:01 |              6 |              6 | Starting Session 1268 of user root.                                                           |
+| 7175 | 2016-08-11 03:50:01 |              6 |              6 |  Started Session 1269 of user root.                                                           |
+| 7176 | 2016-08-11 03:50:01 |              6 |              6 | Started Session 1269 of user root.                                                            |
+| 7177 | 2016-08-11 03:50:01 |              6 |              6 |  Starting Session 1269 of user root.                                                          |
+| 7178 | 2016-08-11 03:50:01 |              6 |              6 | Starting Session 1269 of user root.                                                           |
+| 7179 | 2016-08-11 03:50:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7180 | 2016-08-11 03:50:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7181 | 2016-08-11 03:50:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7182 | 2016-08-11 03:50:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7183 | 2016-08-11 03:50:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7184 | 2016-08-11 03:50:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
+| 7185 | 2016-08-11 03:50:57 |              6 |              6 | -- MARK --                                                                                    |
+| 7186 | 2016-08-11 04:00:01 |              6 |              6 |  Started Session 1270 of user root.                                                           |
+| 7187 | 2016-08-11 04:00:01 |              6 |              6 | Started Session 1270 of user root.                                                            |
+| 7188 | 2016-08-11 04:00:01 |              6 |              6 |  Starting Session 1270 of user root.                                                          |
+| 7189 | 2016-08-11 04:00:01 |              6 |              6 | Starting Session 1270 of user root.                                                           |
+| 7190 | 2016-08-11 04:00:01 |              6 |              6 |  Started Session 1271 of user root.                                                           |
+| 7191 | 2016-08-11 04:00:01 |              6 |              6 | Started Session 1271 of user root.                                                            |
+| 7192 | 2016-08-11 04:00:01 |              6 |              6 |  Starting Session 1271 of user root.                                                          |
+| 7193 | 2016-08-11 04:00:01 |              6 |              6 | Starting Session 1271 of user root.                                                           |
+| 7194 | 2016-08-11 04:00:01 |              6 |              6 |  (root) CMD (/usr/lib64/sa/sa1 1 1)                                                           |
+| 7195 | 2016-08-11 04:00:01 |              6 |              6 |  (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                     |
+| 7196 | 2016-08-11 04:00:01 |              6 |              6 | (root) CMD (/usr/lib64/sa/sa1 1 1)                                                            |
+| 7197 | 2016-08-11 04:00:01 |              6 |              6 | (root) CMD (ntpdate 0.asia.pool.ntp.org)                                                      |
+| 7198 | 2016-08-11 04:00:01 |              6 |              6 |  (root) CMDOUT (/bin/sh: ntpdate: command not found)                                          |
+| 7199 | 2016-08-11 04:00:01 |              6 |              6 | (root) CMDOUT (/bin/sh: ntpdate: command not found)                                           |
++------+---------------------+----------------+----------------+-----------------------------------------------------------------------------------------------+
